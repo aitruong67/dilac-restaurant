@@ -5,11 +5,19 @@ import MenuCard from "./MenuCard";
 import { menuItems } from "@/lib/menu-data";
 import { MenuCategory } from "@/lib/types";
 
-const categories: MenuCategory[] = ["Starters", "Mains", "Desserts", "Drinks"];
+const categories: MenuCategory[] = [
+  "Salads",
+  "Soups & Noodles",
+  "Rice Dishes",
+  "House Specialties",
+  "Vegetables & Tofu",
+  "Milk Tea",
+  "Fruit Tea",
+];
 
 export default function MenuTabs() {
   return (
-    <Tabs defaultValue="Starters">
+    <Tabs defaultValue="Salads">
       <div className="sticky top-16 z-30 bg-white/95 backdrop-blur-sm border-b border-border -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
         <TabsList className="h-auto bg-transparent p-0 gap-0 overflow-x-auto flex-nowrap w-full justify-start rounded-none">
           {categories.map((cat) => (

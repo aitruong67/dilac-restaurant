@@ -1,6 +1,13 @@
 export type DietaryTag = "V" | "GF" | "Spicy";
 
-export type MenuCategory = "Starters" | "Mains" | "Desserts" | "Drinks";
+export type MenuCategory =
+  | "Salads"
+  | "Soups & Noodles"
+  | "Rice Dishes"
+  | "House Specialties"
+  | "Vegetables & Tofu"
+  | "Milk Tea"
+  | "Fruit Tea";
 
 export interface MenuItem {
   id: string;
